@@ -108,7 +108,7 @@ ul {
 .header-nav-link:focus,
 .header-addres:hover,
 .header-addres:focus {
-  color: var(--ocean-cl);
+  color: #404bbf;
 }
 .header-nav-link::after {
   content: "";
