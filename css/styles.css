@@ -113,7 +113,7 @@ ul {
 .header-nav-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   display: block;
   width: 100%;
@@ -151,7 +151,7 @@ ul {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--iris-cl);
+  color: var(--ocean-cl);
 }
 .logo-header {
   display: flex;
