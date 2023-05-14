@@ -98,7 +98,7 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: var(--main-txt-cl);
   padding: 24px 0;
   transition-property: color;
   transition-duration: 250ms;
@@ -113,7 +113,7 @@ ul {
 .header-nav-link::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -4px;
   left: 0;
   display: block;
   width: 100%;
