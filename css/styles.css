@@ -461,7 +461,7 @@ button {
 
 .footer-subscribe-row {
     display: flex;
-    
+
 }
 
 .footer-subscribe-input {
@@ -479,6 +479,10 @@ button {
     background-color: transparent;
 }
 
+.footer-subscribe-input:hover,
+.footer-subscribe-input:focus {
+    border-color: var(--green-cl);
+}
 
 
 .footer-subscribe-btn {
@@ -494,6 +498,12 @@ button {
     color: var(--white-cl);
     background-color: var(--iris-cl);
     fill: var(--white-cl);
+    transition: background-color var(--transition-duration-and-func);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background-color: var(--green-cl);
 }
 
 /* ===================== BACKDROP AND MODAL STYLE ===================== */
