@@ -515,15 +515,15 @@ button {
     height: 100%;
     background-color: var(--modal-cl);
 
-    /* opacity: 0;
-    pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
     transition: opacity var(--transition-duration-and-func), visibility var(--transition-duration-and-func);
 }
 
-/* .backdrop.is-open {
+.backdrop.is-open {
     opacity: 1;
     pointer-events: auto;
-} */
+}
 
 .modal {
     position: absolute;
@@ -572,11 +572,6 @@ button {
     margin-bottom: 16px;
 }
 
-.modal-form {
-    /* display: flex;
-    flex-direction: column;
-    gap: 8px; */
-}
 
 .modal-form-label {
     display: block;
