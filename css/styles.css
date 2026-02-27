@@ -463,7 +463,6 @@ button {
     padding-left: 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-right: 24px;
     background-color: transparent;
 }
 
@@ -474,8 +473,7 @@ button {
 
 
 .footer-subscribe-btn {
-    display: inline-flex;
-    gap: 16px;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-width: 165px;
@@ -495,6 +493,10 @@ button {
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
     background-color: var(--green-cl);
+}
+
+.footer-subscribe-icon {
+    margin-left: 16px;
 }
 
 /* ===================== BACKDROP AND MODAL STYLE ===================== */
@@ -554,11 +556,12 @@ button {
     border-radius: 50%;
     background-color: var(--border-card-cl);
     border: 1px solid #0000001a;
-    transition: background-color var(--transition-duration-and-func);
+    transition: background-color var(--transition-duration-and-func), border var(--transition-duration-and-func);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
+    border: none;
     background-color: var(--main-hover-cl);
     fill: var(--white-cl);
 }
@@ -593,12 +596,13 @@ button {
     padding-left: 38px;
     border-radius: 4px;
     border: 1px solid var(--modal-cl);
-    transition: border-color var(--transition-duration-and-func);
     outline: transparent;
+    background-color: transparent;
+    transition: border-color var(--transition-duration-and-func);
 }
 
 .modal-form-input:focus {
-    border-color: 1px solid var(--iris-cl);
+    border-color: var(--iris-cl);
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -622,23 +626,29 @@ button {
     height: 120px;
     padding: 8px 16px;
     border-radius: 4px;
+    color: var(--modal-cl);
     resize: none;
     border: 1px solid var(--modal-cl);
-    transition: outline var(--transition-duration-and-func);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color var(--transition-duration-and-func);
 }
 
 .modal-form-textarea:focus {
-    outline: 1px solid var(--iris-cl);
+    border-color: var(--iris-cl);
 }
 
 .modal-form-checkbox-wrapper {
     margin-bottom: 24px;
+    
 }
 
 .modal-form-checkbox:checked + 
 .modal-form-checkbox-label
 .modal-form-custom-checkbox {
     background-color: var(--main-hover-cl);
+    border: none;
+    
 }
 
 .modal-form-custom-checkbox {
@@ -649,10 +659,13 @@ button {
     height: 16px;
     border-radius: 2px;
     border: 1px solid var(--modal-cl);
-    fill: var(--cloud-cl);
+    fill: transparent;
     cursor: pointer;
     margin-right: 8px;
+    transition: background-color var(--transition-duration-and-func);
 }
+
+
 
 .modal-form-checkbox-link {
     text-decoration: underline;
