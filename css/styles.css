@@ -663,7 +663,10 @@ button {
     fill: transparent;
     cursor: pointer;
     margin-right: 8px;
-    transition: background-color var(--transition-duration-and-func), border var(--transition-duration-and-func);
+    transition:
+    background-color var(--transition-duration-and-func), 
+    border var(--transition-duration-and-func), 
+    fill var(--transition-duration-and-func);
 }
 
 
