@@ -646,6 +646,7 @@ button {
 .modal-form-checkbox:checked + 
 .modal-form-checkbox-label
 .modal-form-custom-checkbox {
+    fill: var(--cloud-cl);
     background-color: var(--main-hover-cl);
     border: none;
     
@@ -662,7 +663,7 @@ button {
     fill: transparent;
     cursor: pointer;
     margin-right: 8px;
-    transition: background-color var(--transition-duration-and-func);
+    transition: background-color var(--transition-duration-and-func), border var(--transition-duration-and-func);
 }
 
 
